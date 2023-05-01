@@ -1,7 +1,97 @@
-.color-primary {
+.class-test {
     color:white;
 }
 
-.font-50 {
-    font-size: 50px;
+#header-bottom{
+    border-bottom: 10px groove red;
+}
+
+.header-area{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content{
+    flex: 2;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.login-form{
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+    background-color: darkred;
+    padding: 10px;
+    text-align: center;
+    border: 1px groove darkgray;
+}
+
+.text-field{
+    font-size: 12px;
+    padding: 10px;
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+.submit{
+    font-size: 14px;
+    padding: 10px;
+    width: 260px;
+    background-color: black;
+    color: white;
+}
+
+.image{
+    background-image: url("https://images5.alphacoders.com/885/thumb-1920-885513.jpg");
+    background-size: contain;
+    margin-top: 150px;
+    margin-bottom: 500px;
+    height: 800px;
+    width: 500px;
+    vertical-align: middle;
+}
+
+.wrap{
+    width: 100px;
+    position: relative;
+}
+
+.introduction{
+    position: absolute;
+    top: 40%;
+    left: 400%;
+    width: 300%;
+    transform: translate(-50%, -20%);
+    font-size: 30px;
+    text-align: center;
+}
+
+.movie-area{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.music-area{
+    display: flex;
+    flex-wrap: nowwrap;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+#music-text{
+    font-size: 24px;
 }
