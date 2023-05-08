@@ -12,6 +12,13 @@
       html {
           background-color: black;
       }
+      .show-box{
+          background: #e4e4e4;
+          color: red;
+          padding: 20px;
+          border-radius: 5px;
+          display: none;
+      }
     </style>
 </head>
 <body>
@@ -36,7 +43,7 @@
     <div class="image">
         <img src="https://images5.alphacoders.com/885/thumb-1920-885513.jpg">
     </div>
-    <div class="introduction">
+    <div class="introduction" class="show-box" id="show">
         <h1 class="class-test">Hello!! this is cillian</h1>
         <p class="class-test">Name : 권재욱</p>
         <p class="class-test">Grade : freshman</p>
@@ -45,6 +52,11 @@
         <p class="class-test">MBTI : ENTP</p>
         <p class="class-test">Hobby : 영화감상</p>
         <p class="class-test">Favorite Actor : Cillian Murphy</p>
+    </div>
+        <button style="background-color: red; color: white" id="close">닫기</button>
+        </div>
+    <button style="background-color: red; color: white" id="open">내 소개 보기</button>
+
     </div>
 </div>
 <h2 class="class-test" >내가 찜한 콘텐츠-영화/드라마</h2>
@@ -70,6 +82,17 @@
 
 <br/>
 
+<script>
+function show(status){
+    document.getElementById('show').style.display= status;
+}
 
+document.getElementById('close').addEventListener('click',function (){
+    document.getElementById('show').style.display='none';
+});
+document.getElementById('open').addEventListener('click',function (){
+    document.getElementById('show').style.display='block';
+});
+</script>
 </body>
 </html>
