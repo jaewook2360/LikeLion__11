@@ -1,6 +1,7 @@
 package likelion.springbootcillian.controller;
 
 import likelion.springbootcillian.domain.Member;
+import likelion.springbootcillian.dto.MemberDto;
 import likelion.springbootcillian.service.MemberService;
 import likelion.springbootcillian.service.MemberServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,8 @@ public class MemberController {
     //Model 객체에 new Member()를 value로, "memberForm"을 name으로 전달, "members/createMemberForm"의 형태로 반환, 경로는 members/new와 매핑됨.
     @GetMapping("new")
     public String createForm(Model model) {
-        model.addAttribute("memberForm", new Member());
+        MemberDto member = new MemberDto();
+        model.addAttribute("memberForm", member);
         return "members/createMemberForm";
     }
 
